@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaylube Discord Bot</title>
+  <meta name="description" content="Jaylube - fun, music, and moderation Discord bot built with discord.js">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1a1a2f, #0b0b13);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 70px 20px 40px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      color: #00b0f4;
+      text-shadow: 0 0 20px rgba(0, 176, 244, 0.5);
+    }
+
+    p.subtitle {
+      font-size: 1.3em;
+      color: #d0d0d0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 15px 35px;
+      font-size: 1.1em;
+      color: #fff;
+      background: linear-gradient(135deg, #5865f2, #7289da);
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 0 25px rgba(88, 101, 242, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(88, 101, 242, 0.8);
+    }
+
+    section {
+      margin: 60px 20px;
+      max-width: 900px;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    section h2 {
+      color: #00b0f4;
+      margin-bottom: 15px;
+      font-size: 1.7em;
+    }
+
+    section ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    section li {
+      margin: 12px 0;
+      line-height: 1.6em;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 30px 0;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #00b0f4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jaylube Bot</h1>
+    <p class="subtitle">
+      A fun, chaotic, and powerful Discord bot built using <b>discord.js</b>.<br>
+      It brings <b>music, moderation, and memes</b> straight into your server.
+    </p>
+    <a class="button" href="https://discord.com/oauth2/authorize?client_id=1432074328119316681" target="_blank">🚀 Invite Jaylube</a>
+  </header>
+
+  <section>
+    <h2>🎵 Music Commands</h2>
+    <ul>
+      <li><b>jaylube zahraj &lt;název&gt;</b> — plays SoundCloud tracks directly into your voice channel.</li>
+      <li>Smart SoundCloud search using <code>play-dl</code>.</li>
+      <li>Auto-disconnects when the song ends.</li>
+      <li>Error handling and funny responses when something goes wrong 😄</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🛠️ Moderation</h2>
+    <ul>
+      <li><b>jaylube smaz &lt;počet&gt;</b> — deletes messages in bulk.</li>
+      <li><b>jaylube kickni @user</b> — kicks members (if you have permission).</li>
+      <li><b>jaylube vysprchuj @user</b> — gives a 1-minute timeout to a user (“vysprchuj” them 😆).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💬 Fun Stuff</h2>
+    <ul>
+      <li>Responds to keywords like <b>jaylub</b> and <b>holub</b>.</li>
+      <li>Custom replies for specific user IDs (inside jokes 👀).</li>
+      <li>Logs all interactions in the console for debugging and fun tracking.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>⚙️ Tech Stack</h2>
+    <ul>
+      <li><b>Language:</b> JavaScript (Node.js)</li>
+      <li><b>Libraries:</b> discord.js, @discordjs/voice, play-dl, yt-search, ytdl-core</li>
+      <li><b>Hosting:</b> Any Node environment (VPS, Raspberry Pi, etc.)</li>
+    </ul>
+  </section>
+
+  <footer>
+    Made with ❤️ by <a href="https://github.com/Preclik02" target="_blank">Preclik02</a> — Jaylube v1.0
+  </footer>
+</body>
+</html>
